@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background: linear-gradient(45deg, rgb(88, 4, 88), #310597, black);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: white;
+}
+
+/* Profile Card Container */
+.profile {
+  background-color: black;
+  border: 2px solid #A79AE0;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(167, 154, 224, 0.3);
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Card Header Section */
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(45deg, rgba(88, 4, 88, 0.5), rgba(49, 5, 151, 0.5));
+  border-bottom: 2px solid #A79AE0;
+  text-align: center;
+}
+
+/* Avatar Styling */
+figure {
+  margin: 0;
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #A79AE0;
+  box-shadow: 0 8px 16px rgba(167, 154, 224, 0.5);
+  display: block;
+}
+
+/* Name Styling */
+.name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Bio Text */
+.card-header p {
+  color: #A79AE0;
+  line-height: 1.7;
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0;
+}
+
+/* Timestamp Section */
+.time-stamp {
+  background: rgba(49, 5, 151, 0.3);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #A79AE0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.time-stamp h3 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.time-stamp p {
+  color: #A79AE0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+/* Social Links Section */
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #A79AE0;
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, rgb(88, 4, 88), #310597);
+  border: 2px solid #A79AE0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  padding: 0.5rem;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(167, 154, 224, 0.6);
+  background: #310597;
+}
+
+.social-links a:focus {
+  outline: 3px solid #A79AE0;
+  outline-offset: 3px;
+}
+
+.social-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Hobbies and Dislikes Sections */
+section {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(167, 154, 224, 0.2);
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #A79AE0;
+  display: inline-block;
+}
+
+section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+section li {
+  color: #A79AE0;
+  padding: 0.75rem 1rem;
+  background: rgba(49, 5, 151, 0.2);
+  border-radius: 8px;
+  border-left: 4px solid #A79AE0;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+section li::before {
+  content: '•';
+  color: #A79AE0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+section li:hover {
+  background: rgba(49, 5, 151, 0.4);
+  transform: translateX(5px);
+}
+
+/* Dislikes Section - Different Accent Color */
+.dislikes h2 {
+  border-bottom-color: rgb(88, 4, 88);
+}
+
+.dislikes li {
+  border-left-color: rgb(88, 4, 88);
+}
+
+.dislikes li::before {
+  color: rgb(88, 4, 88);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .card-header p {
+    font-size: 1.1rem;
+  }
+
+  figure img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-links {
+    gap: 3rem;
+  }
+
+  .social-links a {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile {
+    margin: 0.5rem;
+  }
+
+  .card-header {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .card-header p {
+    font-size: 0.95rem;
+  }
+
+  figure img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  section li {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .time-stamp {
+    padding: 0.75rem 1rem;
+  }
+
+  .time-stamp h3 {
+    font-size: 0.8rem;
+  }
+
+  .time-stamp p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .profile {
+    border-radius: 12px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  figure img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .time-stamp {
+    max-width: 100%;
+  }
+
+  .time-stamp p {
+    font-size: 0.85rem;
+  }
+}

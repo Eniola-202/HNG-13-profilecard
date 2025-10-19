@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <article id="profile-card" class="profile" data-testid="test-profile-card">
+        <div class="card-header">
+            <figure>
+                <img 
+                src="./profilepic.jpg" 
+                alt="Profile picture of Eniola" 
+                data-testid="test-user-avatar"
+                >
+            </figure>
+            <h2 
+                data-testid="test-user-name" 
+                class="name"
+                aria-label="Profile owner name">
+                    Eniola Euince Alao
+            </h2>
+            <p data-testid="test-user-bio">
+                I'm a Computer Engineering student at The Federal University of Technology, Minna.
+                I love music, reading and God.
+            </p>
+            <div class="time-stamp">
+                <h3>Current Time in Milliseconds</h3>
+                <p data-testid="test-user-time" id="timemillisec" ></p>
+            </div>   
+            
+        </div>
+
+                <ul aria-label="Social media links" class="social-links" data-testid="test-user-social-links">
+                    <li>
+                        <a 
+                            href="https://github.com/Eniola-202"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            alt="Github logo"
+                            data-testid="test-user-social-github">
+                                <img 
+                                    class="logo1" 
+                                    src="./github-mark.png" 
+                                    alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://www.linkedin.com/in/eniola-euince-alao" 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            alt="Linkedin logo"
+                            data-testid="test-user-social-linkedin">
+                                <img 
+                                    class="logo2" 
+                                    src="./LI-In-Bug.png" 
+                                    alt="" srcset="">
+                        </a>
+                    </li>
+                </ul>
+
+            <section class="hobbies">
+                <h2>Hobbies</h2>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Coding</li>
+                        <li>Reading books</li>
+                        <li>Watching Youtube Videos</li>
+                    </ul>
+                </section>
+                <section class="dislikes">
+                    <h2>Dislikes</h2>
+                        <ul data-testid="test-user-dislikes">
+                            <li>Noisy Environment</li>
+                            <li>Insults</li>
+                            <li>Injustice</li>
+                        </ul>
+                </section>
+
+        
+    </article>
+</body>
+<script src="main.js"></script>
+</html>
