@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
 * {
   margin: 0;
   padding: 0;
@@ -26,11 +21,7 @@ body {
   border: 2px solid #A79AE0;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(167, 154, 224, 0.3);
-<<<<<<< HEAD
-  max-width: 800px;
-=======
   max-width: 1200px;
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   width: 100%;
   overflow: hidden;
 }
@@ -73,11 +64,7 @@ figure img {
 
 /* Bio Text */
 .card-header p {
-<<<<<<< HEAD
-  color: #A79AE0;
-=======
   color: #d8b909;
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   line-height: 1.7;
   font-size: 1rem;
   max-width: 600px;
@@ -158,21 +145,13 @@ figure img {
 }
 
 /* Hobbies and Dislikes Sections */
-<<<<<<< HEAD
-section {
-=======
 .hobbies,
 .dislikes {
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   padding: 2rem;
   border-bottom: 1px solid rgba(167, 154, 224, 0.2);
 }
 
-<<<<<<< HEAD
-section:last-child {
-=======
 .dislikes {
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   border-bottom: none;
 }
 
@@ -184,8 +163,6 @@ section h2 {
   padding-bottom: 0.75rem;
   border-bottom: 2px solid #A79AE0;
   display: inline-block;
-<<<<<<< HEAD
-=======
 }
 section ul {
   list-style: none;
@@ -361,7 +338,6 @@ section li:hover {
   .time-stamp p {
     font-size: 0.85rem;
   }
->>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
 }
 
 section ul {
