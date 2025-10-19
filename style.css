@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +26,11 @@ body {
   border: 2px solid #A79AE0;
   border-radius: 16px;
   box-shadow: 0 20px 60px rgba(167, 154, 224, 0.3);
+<<<<<<< HEAD
   max-width: 800px;
+=======
+  max-width: 1200px;
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   width: 100%;
   overflow: hidden;
 }
@@ -64,7 +73,11 @@ figure img {
 
 /* Bio Text */
 .card-header p {
+<<<<<<< HEAD
   color: #A79AE0;
+=======
+  color: #d8b909;
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   line-height: 1.7;
   font-size: 1rem;
   max-width: 600px;
@@ -145,12 +158,21 @@ figure img {
 }
 
 /* Hobbies and Dislikes Sections */
+<<<<<<< HEAD
 section {
+=======
+.hobbies,
+.dislikes {
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   padding: 2rem;
   border-bottom: 1px solid rgba(167, 154, 224, 0.2);
 }
 
+<<<<<<< HEAD
 section:last-child {
+=======
+.dislikes {
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
   border-bottom: none;
 }
 
@@ -162,6 +184,184 @@ section h2 {
   padding-bottom: 0.75rem;
   border-bottom: 2px solid #A79AE0;
   display: inline-block;
+<<<<<<< HEAD
+=======
+}
+section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+section li {
+  color: #d8b909;
+  padding: 0.75rem 1rem;
+  background: rgba(49, 5, 151, 0.2);
+  border-radius: 8px;
+  border-left: 4px solid #A79AE0;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+section li::before {
+  content: '•';
+  color: #A79AE0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+section li:hover {
+  background: rgba(49, 5, 151, 0.4);
+  transform: translateX(5px);
+}
+
+/* Dislikes Section - Different Accent Color */
+.dislikes h2 {
+  border-bottom-color: rgb(88, 4, 88);
+}
+
+.dislikes li {
+  border-left-color: rgb(88, 4, 88);
+}
+
+.dislikes li::before {
+  color: rgb(88, 4, 88);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .card-header {
+    flex-direction: row;
+  }
+
+  .hobbies,
+  .dislikes {
+    display: inline-block;
+    width: 49.5%;
+    border-bottom: none;
+  }
+
+  .hobbies {
+    border-right: 1px solid rgba(167, 154, 224, 0.2);
+  }
+  .profile::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .card-header p {
+    font-size: 1.1rem;
+  }
+
+  figure img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .social-links {
+    gap: 3rem;
+  }
+
+  .social-links a {
+    width: 70px;
+    height: 70px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .profile {
+    margin: 0.5rem;
+  }
+
+  .card-header {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .card-header p {
+    font-size: 0.95rem;
+  }
+
+  figure img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .social-links {
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .social-links a {
+    width: 50px;
+    height: 50px;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.25rem;
+  }
+
+  section li {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .time-stamp {
+    padding: 0.75rem 1rem;
+  }
+
+  .time-stamp h3 {
+    font-size: 0.8rem;
+  }
+
+  .time-stamp p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .profile {
+    border-radius: 12px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  figure img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .time-stamp {
+    max-width: 100%;
+  }
+
+  .time-stamp p {
+    font-size: 0.85rem;
+  }
+>>>>>>> 2e0875e (feat: make responsive in mobile and desktop view)
 }
 
 section ul {
