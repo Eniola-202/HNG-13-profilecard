@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+   background: linear-gradient(135deg, #6c84eb 0%, #ad44dd 100%);
+   text-align: center;
+}
+main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+section{
+    padding-top: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 4rem;
+    color: #ffffff;
+}
+h1 span{
+    background-image: linear-gradient(45deg, #6d40d5, #580458);
+    background-clip: text;
+    color: transparent;
+}
+h2{
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #6505be ;
+}
+h3{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #6d40d5;
+}
+h2:hover{
+    background-image: linear-gradient(45deg, #6d40d5, #ad44dd );
+    background-clip: text;
+    color: transparent;
+    border-bottom: 2px solid #6d40d5;
+}
+h3:hover{
+    background-image: linear-gradient(45deg, #6d40d5, #ad44dd );
+    background-clip: text;
+    color: transparent;
+    border-bottom: 1px solid #6d40d5;
+}
+p{
+    margin: 2px;
+    font-size: 1.2rem;
+    color: #ede4e4;
+    line-height: 1.6;
+    text-align: center;
+}
+strong{
+    color: purple;
+}
+.bio{
+    border-right: 3px solid #6d40d5;
+}
+.goals{
+    border-left: 3px solid #6d40d5;
+}
+.confidence{
+    border-right: 3px solid #6d40d5;
+}
+.future-note{
+    border-left: 3px solid #6d40d5;
+}
+.extra-thought{
+    border-right: 3px solid #6d40d5;
+}
+footer{
+    text-align: center;
+}
