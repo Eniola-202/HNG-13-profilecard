@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <div
+        id="successMessage"
+        class="success-message"
+        data-testid="test-contact-success"
+        role="alert"
+        aria-live="polite"
+        >
+            <strong>Success!</strong>
+    </div>
+    <form id="contactForm" action="">
+        <label for="fullName">Full Name:</label>
+            <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                aria-required="true"
+                placeholder="Full Name"
+                data-testid="test-contact-name"
+                aria-describedby="fullNameError"
+                required>
+                    <div 
+                        id="fullNameError" 
+                        class="error-message"
+                        role="alert"
+                        data-testid="test-contact-error-name"
+                        style="display:none; color:red;">
+                            Please enter your full name.
+                    </div>
+        <br><br>
+        <label for="email">Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                aria-required="true"
+                placeholder="name@gmail.com"
+                data-testid="test-contact-email"
+                aria-describedby="emailError"
+                required>
+                    <div 
+                        id="emailError"
+                        class="error-message"
+                        role="alert"
+                        data-testid="test-contact-error-email"
+                        style="display:none; color:red;">
+                        Please enter a valid email address.
+                    </div>
+        <br><br>
+        <label for="text">Subject:</label>
+            <input 
+                type="text" 
+                id="subject" 
+                name="subject" 
+                aria-required="true"
+                aria-describedby="subjectError"
+                placeholder="Input Subject"
+                data-testid="test-contact-subject" 
+                required>
+                    <div 
+                        id="subjectError" 
+                        class="error-message"
+                        role="alert"
+                        data-testid="test-contact-error-subject"
+                        style="display:none; color:red;">
+                            Please enter a subject.
+                    </div>
+        <br><br>
+        <label for="message">Message:</label>
+            <textarea 
+                name="message" 
+                id="message"
+                aria-describedby="messageError"
+                data-testid="test-contact-message" 
+                aria-required="true"
+                placeholder="Minimum of 10 characters"
+                required></textarea>
+                <div
+                    class="char-counter"
+                    id="charCount"
+                    aria-live="polite">
+                        0/10 characters
+                </div>
+                <div 
+                    id="messageError" 
+                    class="error-message"
+                    role="alert"
+                    data-testid="test-contact-error-message"
+                    style="display:none; color:red;"></div>
+        <br><br>
+        <button 
+            type="submit" 
+            data-testid="test-contact-submit"
+            aria-label="Submit Contact Form">
+            Submit
+        </button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>

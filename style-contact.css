@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Focus visible for keyboard navigation */
+*:focus-visible {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6c84eb 0%, #ad44dd 100%);
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+form {
+            max-width: 600px;
+            margin: 10px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        label .required {
+            color: #e53e3e;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.2s ease;
+            background: #ffffff;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;      
+            border-bottom-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        input:hover, textarea:hover {
+            border-color: #cbd5e0;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+/* Error state */
+input.invalid, textarea.invalid {
+    border-color: #e53e3e;
+    background: #fff5f5;
+}
+
+input.invalid:focus, textarea.invalid:focus {
+    box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+/* Error message styling */
+.error {
+        color: #e53e3e;
+        font-size: 13px;
+        margin-top: 6px;
+        display: none;
+        align-items: center;
+        gap: 4px;
+}
+
+.error.show {
+    display: flex;
+}
+
+.error::before {
+    content: "⚠";
+    font-size: 14px;
+}
+
+/* Success message styling */
+.success-message {
+    background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+    color: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    display: none;
+    align-items: center;
+    gap: 12px;
+    animation: slideDown 0.3s ease;
+}
+
+.success-message.show {
+    display: flex;
+}
+
+.success-message::before {
+            content: "✓";
+            font-size: 24px;
+            font-weight: bold;
+            background: rgba(255,255,255,0.3);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        ransform: translateY(0);
+    }
+}
+
+
+ button {
+            background: linear-gradient(135deg, #667eea 0%, #ad44dd 100%);
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+        }
+
+        button:disabled {
+            background: #cbd5e0;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Character counter */
+        .char-counter {
+            font-size: 12px;
+            color: #718096;
+            text-align: right;
+            margin-top: 4px;
+        }
+
+        .char-counter.error {
+            color: #e53e3e;
+        }
+ @media (max-width: 640px) {
+            form{
+                padding: 24px;
+                margin: 20px auto;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            button {
+                padding: 12px 24px;
+            }
+        }

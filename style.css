@@ -3,10 +3,45 @@
   padding: 0;
   box-sizing: border-box;
 }
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically within nav */
+  height: 60px;            /* optional height */
+  z-index: 1000;
+}
+nav ul{
+  padding: 10px;
+  align-items: center;
 
+}
+nav li{
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+li a:hover{ 
+   border-bottom: 3px solid ;
+   border-bottom-color: #6d40d5 ;
+}  
+li a:focus{
+  outline: none;
+  border-bottom: 2px solid ;
+  border-bottom-color: #6d40d5 ;
+}
+li a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  background: linear-gradient(45deg, rgb(88, 4, 88), #310597, black);
+  background: linear-gradient(45deg, #580458, #310597, black);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,6 +59,7 @@ body {
   max-width: 1200px;
   width: 100%;
   overflow: hidden;
+  margin-top: 40px;
 }
 
 /* Card Header Section */
@@ -215,7 +251,6 @@ section li:hover {
   .card-header {
     flex-direction: row;
   }
-
   .hobbies,
   .dislikes {
     display: inline-block;
@@ -257,7 +292,7 @@ section li:hover {
 
 @media (max-width: 767px) {
   .profile {
-    margin: 0.5rem;
+    margin-top: 50px;
   }
 
   .card-header {
@@ -413,7 +448,10 @@ section li:hover {
 
 @media (max-width: 767px) {
   .profile {
-    margin: 0.5rem;
+     margin-top: 40px;
+     margin-bottom: 1.5rem;
+     margin-left: 1.5rem;
+     margin-right: 1.5rem;
   }
 
   .card-header {
@@ -476,6 +514,7 @@ section li:hover {
 
   .profile {
     border-radius: 12px;
+    margin-top: 50px;
   }
 
   .name {
